@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>makeupwebsite</title>
+    <style>
+        body{
+            box-sizing: border-box;padding: 0;margin: 0;
+        }
+        .container{
+            height:auto;width: 100%;
+            background: url(./image/backgound.avif);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .header{height: 300px;width: 100%; }
+        .left{height: 300px; width: 50% ;float: left; }
+        .right{height: 300px;width: 50%;float: left;}
+        .outerdiv{
+    height: 200px;width: 300px;border-radius: 50%;
+position: relative;left: 120px;top: 100px;perspective: 800px;
+}
+.innerdiv{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+}
+.front, .back{
+    position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+}
+.outerdiv:hover .innerdiv{
+    transform: rotateX(180deg);
+}
+.back{
+    transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+}
+.img{
+    border-radius: 50%;
+}
+.back h1{
+    font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+}
+.back p{ font-size: 25px;
+    color: white; }
+    .outerdiva{
+        height: 200px;width: 300px;border-radius: 50%;
+    position: relative; perspective: 800px; top: 100px;left: 200px;
+    }
+    .innerdiva{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+    }
+    .fronta, .backa{
+        position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+    }
+    .outerdiva:hover .innerdiva{
+        transform: rotateX(180deg);
+    }
+    .backa{
+        transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+    }
+    .imga{
+        border-radius: 50%;
+    }
+    .backa h1{
+        font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+    }
+    .backa p{ font-size: 25px; color: white;}
+    .center{ height: 300px;width: 100%; }
+    .outerdivb{
+            height: 200px;width: 300px;border-radius: 50%;
+        position: relative; perspective: 800px; left: 35%;top: 50px;
+        }
+        .innerdivb{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+        }
+        .frontb, .backb{
+            position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+        }
+        .outerdivb:hover .innerdivb{
+            transform: rotateX(180deg);
+        }
+        .backb{
+            transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+        }
+        .imgb{
+            border-radius: 50%;
+        }
+        .backb h1{
+            font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+        }
+        .backb p{ font-size: 25px;
+            color: white; }
+            .manu{height: 300px;width: 100%; }
+            .leftm{height: 300px; width: 50% ;float: left;  }
+            .outerdivm{
+    height: 200px;width: 300px;border-radius: 50%;
+position: relative;left: 120px;perspective: 800px;
+}
+.innerdivm{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+}
+.frontm, .backm{
+    position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+}
+.outerdivm:hover .innerdivm{
+    transform: rotateX(180deg);
+}
+.backm{
+    transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+}
+.imgm{
+    border-radius: 50%;
+}
+.backm h1{
+    font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+}
+.backm p{ font-size: 25px;
+    color: white; }
+    
+    .outerdivw{
+        height: 200px;width: 300px;border-radius: 50%;
+    position: relative; perspective: 800px; left: 67%;
+    }
+    .innerdivw{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+    }
+    .frontw, .backw{
+        position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+    }
+    .outerdivw:hover .innerdivw{
+        transform: rotateX(180deg);
+    }
+    .backw{
+        transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+    }
+    .imgw{
+        border-radius: 50%;
+    }
+    .backw h1{
+        font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+    }
+    .backw p{ font-size: 25px; color: white;}
+    
+   #rahul{color: white;position: relative;left: 150px; font-size: 25px;top: 100px; text-transform: uppercase;}
+   #p{color: white;position: relative;left: 140px; font-size: 20px;top: 100px; text-transform: capitalize;}
+   #ram{color: white;position: relative;left: 280px; font-size: 25px;top: 100px; text-transform: uppercase;}
+   #a{color: white;position: relative;left: 240px; font-size: 20px;top: 100px; text-transform: capitalize;}
+   #nyra{color: white;position: relative;left: 37%; font-size: 25px;top: 80px; text-transform: uppercase;}
+   #b{color: white;position: relative;left: 38%; font-size: 20px;top: 80px; text-transform: capitalize;}
+   #mahesh{ color: white; text-transform: uppercase;position: relative;font-size: 25px;left: 150px; }
+   #c{ color: white; text-transform: capitalize;position: relative;font-size: 20px;left: 160px;}
+   #ankit{ color: white; text-transform: uppercase;position: relative;font-size: 25px;left: 300px; }
+   #d{ color: white; text-transform: capitalize;position: relative;font-size: 20px;left: 340px;}
+   .zero{height: 100px;width: 100%;position: relative;}
+   .zero p{text-align: center;font-size: 50px;padding: 20px;color: white;font-weight: bold;font-style: italic;text-transform: uppercase;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="zero"><p>welcome to geeta makeover</p></div>
+        <div class="header">
+            <div class="left">
+            <div class="outerdiv">
+                <div class="innerdiv">
+                    <div class="front"><img src="./image/bridal.jfif" height="200px" width="300px" class="img"></div>
+                    <div class="back"><h1>geeta makeover</h1><p>best in services</p></div>
+                    
+                </div>
+            </div>
+            <h1 id="rahul">bridal make up</h1>
+                    <p id="p">bridal||fashion||party||fantasy</p>
+        </div>
+        <div class="right">
+            <div class="outerdiva">
+                <div class="innerdiva">
+                    <div class="fronta"><img src="./image/Makeup-Artist.jpg" height="200px" width="300px" class="imga"></div>
+                    <div class="backa"><h1>geeta makeover</h1><p>best in services</p></div>
+                </div>
+            </div>
+            <h1 id="ram"> makeup</h1>
+            <p id="a">bridal||fashion||party||fantasy</p>
+        </div>
+
+        </div>
+
+      <div class="center">
+        <div class="outerdivb">
+            <div class="innerdivb">
+                <div class="frontb"><img src="./image/modeling.jpg" height="200px" width="300px" class="imgb"></div>
+                <div class="backb"><h1>geeta makeover</h1><p>best in services</p></div>
+            </div>
+        </div>
+        <h1 id="nyra">modeling makeup</h1>
+        <p id="b">bridal||fashion||party||fantasy</p>
+      </div>
+      <div class="manu">
+        <div class="leftm">
+            <div class="outerdivm">
+                <div class="innerdivm">
+                    <div class="frontm"><img src="./image/Zamms-makeup-studio.jpg" height="200px" width="300px" class="imgm"></div>
+                    <div class="backm"><h1>geeta makeover</h1><p>best in services</p></div>
+                </div>
+            </div>
+            <h1 id="mahesh">bridal hairstyles</h1>
+        <p id="c">bridal||fashion||party||fantasy</p>
+        </div>
+        <div class="rightw">
+            <div class="outerdivw">
+                <div class="innerdivw">
+                    <div class="frontw"><img src="./image/hand.jpg" height="200px" width="300px" class="imgw"></div>
+                    <div class="backw"><h1>geeta makeover</h1><p>best in services</p></div>
+                </div>
+            </div>
+            <h1 id="ankit">bridal mehendi designs</h1>
+        <p id="d">bridal||fashion||party||fantasy</p>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>
